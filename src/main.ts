@@ -1,5 +1,5 @@
 import fs = require("fs");
-
+import * as TS_MIB from "./Parser";
 
 function loadContents(filePath: string): string
 {
@@ -8,4 +8,5 @@ function loadContents(filePath: string): string
 
 let rawContents: string = loadContents('data/RFC1213-MIB.txt')
 
-console.log(rawContents)
+let Parser: TS_MIB.Parser = new TS_MIB.Parser();
+let parsedMIB = Parser.parse(rawContents)
