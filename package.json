@@ -1,0 +1,14 @@
+{
+  "name": "ts-mib-parser",
+  "version": "0.0.1",
+  "author": {
+    "name": "Nick Atkocaitis"
+  },
+  "private": true,
+  "scripts": {
+    "main": "node src/main.js"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.5"
+  }
+}
